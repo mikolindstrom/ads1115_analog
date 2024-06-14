@@ -1,28 +1,32 @@
-synapses:
+---
   - name: "adsanalog"
     signals:
-      - order: "read-analog-0"
+      - order: "sensor one"
+    class_path: "neurons.ads1115_analog.ads1115_analog.Ads1115_analog"
     neurons:
       - ads1115_analog:
           readChannel: ADS.P0
          
-- name: "adsanalog"
+  - name: "adsanalog1"
     signals:
-      - order: "read-analog-1"
-    neurons:
+      - order: "sensor two"
+     class_path: "neurons.ads1115_analog.ads1115_analog.Ads1115_analog"
+     neurons:
       - ads1115_analog:
           readChannel: ADS.P1
 
-- name: "adsanalog"
+  - name: "adsanalog2"
     signals:
-      - order: "read-analog-2"
+      - order: "sensor three"
+    class_path: "neurons.ads1115_analog.ads1115_analog.Ads1115_analog"
     neurons:
       - ads1115_analog:
           readChannel: ADS.P2
 
-- name: "adsanalog"
+  - name: "adsanalog3"
     signals:
-      - order: "read-analog-3"
+      - order: "sensor four"
+    class_path: "neurons.ads1115_analog.ads1115_analog.Ads1115_analog"
     neurons:
       - ads1115_analog:
           readChannel: ADS.P3
